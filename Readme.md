@@ -44,7 +44,3 @@ This lab protects corporate Microsoft 365 data on unmanaged personal mobile devi
 * **#06 Intune App Protection Deployment Summary:** Confirmed active deployment (`Deployed: Yes`) across 3 targeted apps for both Android and iOS BYOD App Protection Policies in Microsoft Intune.
 
 ![Intune App Protection Monitor](02-CA-Enforcement-And-MAM-Telemetry/06-intune-app-protection-monitor.png)
-'@ | Set-Content -Path .\README.md -Encoding UTF8
-
-# Print exact relative paths on disk
-Get-ChildItem -Recurse -File | Resolve-Path -Relative
