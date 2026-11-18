@@ -1,10 +1,3 @@
-cd "C:\Users\Administrator\Desktop\Enterprise-Intune-MAM-AppProtection-Lab"
-
-# Normalize .jpg, .jpeg, or .png.png to single .png
-Get-ChildItem -Recurse -File | Where-Object { $PSItem.Name -match '\.(jpg|jpeg|png\.png)$' } | Rename-Item -NewName { $PSItem.Name -replace '\.(jpg|jpeg|png\.png)$', '.png' }
-
-# Write clean README.md
-@'
 # Microsoft Intune MAM: BYOD App Protection & Conditional Access Lab
 
 Enterprise Mobile Application Management (MAM) and BYOD Data Loss Prevention (DLP) lab built on **Microsoft Intune**, **Microsoft Entra ID Conditional Access**, and **Windows 11 Pro** (`TESTUSER-1`) within the `ApexModernWork.onmicrosoft.com` tenant.
